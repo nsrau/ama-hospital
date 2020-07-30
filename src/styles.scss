@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/scss/bootstrap.scss';
+
+$fiveP: 5%;
+$bx: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+
+.login-container {
+  margin-top: $fiveP;
+  margin-bottom: $fiveP;
+
+  .login-form {
+    padding: $fiveP;
+    box-shadow: $bx;
+
+    h3 {
+      text-align: center;
+      color: #333;
+    }
+
+    form {
+      padding: 10%;
+    }
+
+    .btnSubmit {
+      font-weight: 600;
+      color: #fff;
+      background-color: #0062cc;
+      border-radius: 1rem;
+      padding: 1.5%;
+      border: none;
+      cursor: pointer;
+    }
+
+  }
+}
+
+.card:hover {
+  box-shadow: $bx;
+}
+
+.ng-invalid {
+  input {
+    border: red solid 1px;
+  }
+}
+
+.mt-6, .my-6 {
+  margin-top: 6rem !important;
+  @media screen and (max-width: 768px) {
+    margin-top: 10rem !important;
+  }
+}
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+.input-nav {
+  color: black;
+  margin: 2px 50px;
+  border-color: rgba(0, 0, 0, .1);
+}
+
+.input-nav:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .25);
+}
